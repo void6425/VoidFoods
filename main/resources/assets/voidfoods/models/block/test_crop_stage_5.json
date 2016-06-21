@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "voidfoods:blocks/test_crop_stage_5"
+  }
+}

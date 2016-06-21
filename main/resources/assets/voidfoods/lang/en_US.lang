@@ -1,0 +1,13 @@
+//Items\\
+item.void_ingot.name=Void Ingot
+item.mixing_bowl.name=Mixing Bowl
+item.mayo.name= Mayo
+item.levitationstew.name=Levitation Stew
+item.egg_white.name=Egg White
+item.egg_yolk.name=Egg Yolk
+item.seperated_egg.name=Seperated Egg
+
+
+
+//Blocks\\
+tile.void_ore.name=Void Ore
