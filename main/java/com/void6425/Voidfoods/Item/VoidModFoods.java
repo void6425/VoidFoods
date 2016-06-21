@@ -77,18 +77,69 @@ public final class VoidModFoods {
     public static Item blueberry;
     public static Item rasphberry;
     public static Item blackberry;
-    
-    
+    public static Item base_seeds;
+    public static Item garlic_seeds;
 	
 	
 	
 	public static void init()
 	{
-	   
+	   //base_seeds = registerSeeds("base_seeds", VoidBlocks.base_crop, true);
 	 test_seed = registerSeeds("test_seed", VoidBlocks.test_crop, true);
-	   
-	  
+	 LevitationStew = registerPotionFood(LevitationStew,"LevitationStew", 1, 4f, false, "levitation" );
+	 garlic = registerGenericItem("garlic");
+	 garlic_seeds = registerSeeds("garlic seeds", VoidBlocks.crop_garlic, true);
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	}
+	
+	private static Item registerPotionFood(Item item, String reigstryName, int amount, float saturation, boolean isWolfFood, String Potion){
+		Item item1 = new ItemPotionFood( amount,  saturation,  isWolfFood, Potion);
+		item1.setCreativeTab(CreativeTabs.FOOD);
+        item1.setRegistryName(reigstryName);
+        item1.setUnlocalizedName(reigstryName);
+		return GameRegistry.register(item1);
+	}
+	
+	
+	private static Item registerItemFood(Item item1, String registryName, int amount, float sat, boolean isWolfFood) {
+        Item item11 = new ItemFood(amount, sat, isWolfFood);
+		item11.setCreativeTab(CreativeTabs.FOOD);
+        item11.setRegistryName(registryName);
+        item11.setUnlocalizedName(registryName);
+
+        return GameRegistry.register(item11);
+    }
+	
+	  public static Item registerGenericItem(String registryName) {
+	        final Item item = new Item();
+
+	        return registerItem(item, registryName);
+	    }
+	
+	
+	
+	
+	
 	private static Item registerItem(Item item, String registryName) {
         item.setCreativeTab(CreativeTabs.FOOD);
         item.setRegistryName(registryName);
@@ -128,7 +179,8 @@ public final class VoidModFoods {
     registerRender(seperated_egg);
     registerRender(LevitationStew);
     registerRender(test_seed);
-    
+    registerRender(garlic);
+    registerRender(garlic_seeds);
 	}
    public static void registerRender(Item item)
    {

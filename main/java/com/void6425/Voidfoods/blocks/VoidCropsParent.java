@@ -25,13 +25,6 @@ import net.minecraft.world.World;
 
 	public class VoidCropsParent extends BlockCrops {
 		
-		 @Override
-		    public Item getSeed(){
-			 
-			 return  VoidBaseCrop.Seeds;
-		    }
-		
-		
 		
 		
 		public boolean isOpaqueCube()
@@ -83,7 +76,34 @@ import net.minecraft.world.World;
 	            }
 	        }
 	    }
+	    @Override
+	    public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+	        List<ItemStack> drops = new ArrayList<ItemStack>();
 
+	        int age = state.getValue(AGE);
+	        Random rand = ((World) world).rand;
+
+	        int drop = 0;
+	        int seeds = 1;
+
+	        if (age == 7) {
+	            //10% chance to get an extra seed
+	            if (rand.nextInt(10) == 9) {
+	                seeds++;
+	            }
+
+	            //10% chance to get a second pearl
+	            if (rand.nextInt(10) > 0)
+	                drop = 1;
+	            else
+	                drop = 2;
+	        }
+
+	        drops.add(new ItemStack(this.getSeed(), seeds, 0));
+	        drops.add(new ItemStack(this.getCrop(), drop, 0));
+	        return drops;
+	    }
+	    
 
 	    
 	    
