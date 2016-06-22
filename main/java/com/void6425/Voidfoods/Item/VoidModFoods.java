@@ -150,6 +150,8 @@ public final class VoidModFoods {
 	
 	
 
+	
+	// i dont know how you register items but make sure to register your seeds as ItemSeeds and that takes the farmland and the block that the crop is
     public static Item registerSeeds(String registryName, Block crop, boolean isseed) {
         Item item = new ItemSeeds(crop, Blocks.FARMLAND);
         return registerItem(item, registryName);

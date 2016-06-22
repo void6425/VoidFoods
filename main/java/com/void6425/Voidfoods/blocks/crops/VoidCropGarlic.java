@@ -27,12 +27,12 @@ public class VoidCropGarlic extends VoidCropsParent {
         VoidBlocks.BLOCKS.add(this);
         
     }
-
+// right here is where you tell it what seed to drop the rates are in the parent class
 	 @Override
 	    public Item getSeed(){
 		 return  VoidModFoods.garlic_seeds;
 	    }
-	
+	// this is there you put in what item the crop drops again the rates are in the parent class
     @Override
     protected Item getCrop() {
         return VoidModFoods.garlic;

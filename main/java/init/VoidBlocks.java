@@ -24,9 +24,11 @@ public class VoidBlocks {
 
     public static final List<Block> BLOCKS = new ArrayList<Block>();
     //like this
-    //public static final BlockCropEnder CROP_ENDER = new BlockCropEnder();
-   public static final VoidBaseCrop test_crop = new VoidBaseCrop("test_crop", "test_crop");
-   public static final VoidCropGarlic crop_garlic = new VoidCropGarlic("garlic_crop","garlic_crop");
+    
+  
+    //This is how i register my blocks i recommend it as it is clean
+    public static final VoidBaseCrop test_crop = new VoidBaseCrop("test_crop", "test_crop");
+    public static final VoidCropGarlic crop_garlic = new VoidCropGarlic("garlic_crop","garlic_crop");
    
    
    
