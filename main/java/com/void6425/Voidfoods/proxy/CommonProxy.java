@@ -2,8 +2,6 @@ package com.void6425.Voidfoods.proxy;
 
 import com.void6425.Voidfoods.Crafting.VoidModCrafting;
 import com.void6425.Voidfoods.Item.VoidModFoods;
-import com.void6425.Voidfoods.Item.VoidModItems;
-
 import init.VoidBlocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -15,7 +13,7 @@ public class CommonProxy {
     {
     	
         VoidModFoods.init();
-        VoidModItems.init();
+        
         VoidModCrafting.initCrafting();
         VoidBlocks.register(); 
     }

@@ -20,12 +20,33 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-//This is the parent class for my crops so i can make the crop classes smaller (example VoidCropGarlic)
+//This is the parent class for my crops
 
 
 	public class VoidCropsParent extends BlockCrops {
 		
+		public Item Seeds;
+	    public VoidCropsParent(String UName, String Rname) {
+	        super();
+	        this.setUnlocalizedName(UName);
+	        this.setRegistryName(Rname);
+	        VoidBlocks.BLOCKS.add(this);
+	        
+	    }
+	
+		 @Override
+		    public Item getSeed(){
+			 Item item = VoidModFoods.seedsMap.get(this);
+			 return  item;
+		    }
 		
+	    @Override
+	    protected Item getCrop() {
+				 Item item = VoidModFoods.dropsMap.get(this);
+				 return  item;
+			    }
+	    
+
 		//from here
 		public boolean isOpaqueCube()
 	    {
@@ -35,29 +56,29 @@ import net.minecraft.world.World;
 	  	public boolean isFullCube()
 	    {
 	        return false;
-	    }
+	    } 
+	  	//to here im not sure if this is needed but ehh
 
-	    public IBlockState getStateFromMeta(int meta)
+	   
+	  	
+	  	public IBlockState getStateFromMeta(int meta)
 	    {
 	        return this.getDefaultState().withProperty(AGE, Integer.valueOf(meta));
 	    }
 
+	   
 	    public int getMetaFromState(IBlockState state)
 	    {
 	        return ((Integer)state.getValue(AGE)).intValue();
 	    }
-       //to here im not sure if this is needed but ehh
-	    
-	    
-	    
-	    
+     
 	    //self explanatory
 	    @Override
 	    public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state) {
-	        return true;
-	    }
-
-       //ads the ability to control more about if it can grow
+	        
+	        	return true;
+	        }
+	   
 	    @Override
 	    public boolean canGrow(World worldIn, BlockPos pos, IBlockState state, boolean isClient) {
 	        return state.getValue(AGE) < 7 || worldIn.getLightFromNeighbors(pos.up()) <= 7;
@@ -68,10 +89,9 @@ import net.minecraft.world.World;
 	        Block soil = worldIn.getBlockState(pos.down()).getBlock();
 	        return soil.equals(Blocks.FARMLAND);
 	    }
-       //kinda self explanatory but this is what controls the growth rate
 	    @Override
 	    public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
-	        float baseChance =25.0F;
+	        float baseChance = 50.0F;
 
 	        if (worldIn.getLightFromNeighbors(pos.up()) <= 7) {
 	            if (state.getValue(AGE) < 7) {
@@ -82,8 +102,6 @@ import net.minecraft.world.World;
 	        }
 	    }
 	    
-	    
-	    // this controls drop rates (don't ask how it works im not completely sure but the secondary chance is able to be removed)
 	    @Override
 	    public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
 	        List<ItemStack> drops = new ArrayList<ItemStack>();
