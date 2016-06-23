@@ -1,6 +1,7 @@
 package com.void6425.Voidfoods.proxy;
 
 import com.void6425.Voidfoods.Resources;
+import com.void6425.Voidfoods.Item.VoidModFoods;
 
 import init.VoidBlocks;
 
@@ -16,19 +17,14 @@ public class ClientProxy extends CommonProxy{
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
         VoidBlocks.initModels();
-    //	VoidModFoods.init();
-        
-  
-     
-       
-     OBJLoader.INSTANCE.addDomain(Resources.MODID);
+        VoidModFoods.regiseterRenders();
+    
     }
 
     @Override
     public void init(FMLInitializationEvent e) {
         super.init(e);
      
-      
     }
 
     @Override

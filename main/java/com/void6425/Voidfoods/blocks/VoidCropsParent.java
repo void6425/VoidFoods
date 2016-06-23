@@ -9,6 +9,7 @@ import com.void6425.Voidfoods.Item.VoidModFoods;
 import init.VoidBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
+import net.minecraft.block.IGrowable;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -21,9 +22,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 //This is the parent class for my crops
+import net.minecraftforge.common.IPlantable;
 
 
-	public class VoidCropsParent extends BlockCrops {
+	public class VoidCropsParent extends BlockCrops implements IGrowable, IPlantable {
 		
 		public Item Seeds;
 	    public VoidCropsParent(String UName, String Rname) {
@@ -89,14 +91,28 @@ import net.minecraft.world.World;
 	        Block soil = worldIn.getBlockState(pos.down()).getBlock();
 	        return soil.equals(Blocks.FARMLAND);
 	    }
+	    
+	    public boolean isHarvestReady(IBlockState state) {
+	        return state.getValue(AGE) >= getHarvestReadyAge();
+	    }
+	    
+
+	    public int getHarvestReadyAge() {
+	        return 7;
+	    }
+	    
 	    @Override
 	    public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
-	        float baseChance = 50.0F;
+	        this.checkAndDropBlock(worldIn, pos, state);
 
-	        if (worldIn.getLightFromNeighbors(pos.up()) <= 7) {
-	            if (state.getValue(AGE) < 7) {
-	                if (rand.nextInt((int) (baseChance / getGrowthChance(this, worldIn, pos)) + 1) == 0) {
-	                    worldIn.setBlockState(pos, state.withProperty(AGE, state.getValue(AGE) + 1), 2);
+	        if (worldIn.getLightFromNeighbors(pos.up()) >= 9) {
+	            int i = this.getMetaFromState(state);
+
+	            if (i < this.getHarvestReadyAge()) {
+	                float f = getGrowthChance(this, worldIn, pos);
+
+	                if (rand.nextInt((int) (.0F / f) + 1) == 0) {
+	                    worldIn.setBlockState(pos, this.getStateFromMeta(i + 1), 2);
 	                }
 	            }
 	        }

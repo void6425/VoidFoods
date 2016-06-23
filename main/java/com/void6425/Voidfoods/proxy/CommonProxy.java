@@ -1,6 +1,5 @@
 package com.void6425.Voidfoods.proxy;
 
-import com.void6425.Voidfoods.Crafting.VoidModCrafting;
 import com.void6425.Voidfoods.Item.VoidModFoods;
 import init.VoidBlocks;
 import net.minecraft.item.Item;
@@ -13,7 +12,6 @@ public class CommonProxy {
     {
     	
         VoidModFoods.init();  
-        VoidModCrafting.initCrafting();
         VoidBlocks.register(); 
     }
 

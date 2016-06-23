@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "voidmod:items/void_ingot"
+        "layer0": "voidfoods:items/green_onion"
     }
 }

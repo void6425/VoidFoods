@@ -16,7 +16,10 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemSeedFood;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public final class VoidModFoods {
 	
@@ -107,23 +110,17 @@ public final class VoidModFoods {
 	}
 	public static void regiseterRenders()
 	{
-    registerRender(egg_white);
-    registerRender(egg_yolk);
-    registerRender(mayo);
-    registerRender(seperated_egg);
-    registerRender(LevitationStew);
-    registerRender(test_seed);
-    registerRender(garlic);
-    registerRender(garlic_seeds);
-    registerRender(green_onion_seed);
+    initModels(garlic);
+    initModels(garlic_seeds);
+    initModels(green_onion_seed);
+    initModels(green_onion);
 	}
-   public static void registerRender(Item item)
-   {
-	Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new 
-			ModelResourceLocation(Resources.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));   
-	   
-	   
-   }
+	
+	@SideOnly(Side.CLIENT)
+    public static void initModels(Item item) {
+        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName().toString()));
+    }
+
 	
 	
 	

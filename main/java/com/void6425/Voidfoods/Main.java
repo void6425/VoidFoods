@@ -20,6 +20,7 @@ public class Main {
 	
 	
 	
+	
 	@SidedProxy(clientSide= Resources.ClientProxy, serverSide= Resources.CommonProxy)
 	public static CommonProxy proxy;
 	
