@@ -12,8 +12,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) 
     {
     	
-        VoidModFoods.init();
-        
+        VoidModFoods.init();  
         VoidModCrafting.initCrafting();
         VoidBlocks.register(); 
     }
