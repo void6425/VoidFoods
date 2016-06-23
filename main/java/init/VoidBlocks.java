@@ -26,10 +26,16 @@ public class VoidBlocks {
     public static final VoidCropsParent test_crop = new VoidCropsParent("test_crop", "test_crop");
     public static final VoidCropsParent crop_garlic = new VoidCropsParent("garlic_crop","garlic_crop");
     public static final VoidCropsParent green_onion_crop = new VoidCropsParent("green_onion_crop", "green_onion_crop");
-   
-   
-   
-   
+    public static final VoidCropsParent onion_crop = new VoidCropsParent("onion_crop", "onion_crop");
+    public static final VoidCropsParent shallots_crop = new VoidCropsParent("shallots_crop", "shallots_crop");
+    public static final VoidCropsParent tomato_crop = new VoidCropsParent("tomato_crop", "tomato_crop");
+    public static final VoidCropsParent green_bell_pepper_crop = new VoidCropsParent("green_bell_pepper_crop", "green_bell_pepper_crop");
+    public static final VoidCropsParent yellow_bell_pepper_crop = new VoidCropsParent("yellow_bell_pepper_crop", "yellow_bell_pepper_crop");
+    public static final VoidCropsParent red_bell_pepper_crop = new VoidCropsParent("red_bell_pepper_crop", "red_bell_pepper_crop");
+    public static final VoidCropsParent corn_crop = new VoidCropsParent("corn_crop", "corn_crop");
+    public static final VoidCropsParent cucumber_crop = new VoidCropsParent("cucumber_crop", "cucumber_crop");
+    
+    
    public static void register(){
         for (Block block : BLOCKS) {
             GameRegistry.register(block);

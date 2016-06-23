@@ -27,6 +27,7 @@ public final class VoidModFoods {
 	
 	public static HashMap<VoidCropsParent, Item> seedsMap = new HashMap<VoidCropsParent, Item>();	
 	public static HashMap<VoidCropsParent, Item> dropsMap = new HashMap<VoidCropsParent, Item>();	
+	
 	public static Item test_seed;
 	public static Item egg_white;
 	public static Item egg_yolk;
@@ -40,51 +41,52 @@ public final class VoidModFoods {
     public static Item green_onion;
     public static Item green_onion_seed;
     public static Item onion;
+    public static Item onion_seed;
     public static Item shallots;
+    public static Item shallots_seed;
     
    
     public static Item tomato;
-    
+    public static Item tomato_seed;
     public static Item red_bell_pepper;
+    public static Item red_bell_pepper_seed;
     public static Item green_bell_pepper;
-    public static Item yellow_bell_Pepper;
+    public static Item green_bell_pepper_seed;
+    public static Item yellow_bell_pepper;
+    public static Item yellow_bell_pepper_seed;
+    public static Item corn;
+    public static Item corn_seed;
+    public static Item cucumber;
+    public static Item cucumber_seed;
+    public static Item squash;
+    public static Item squash_seed;
+    public static Item blueberry;
+    public static Item blueberry_seed;
+    public static Item rasphberry;
+    public static Item rasphberry_seed;
+    public static Item blackberry;
+    public static Item blackberry_seed;
+    
+    
     public static Item diced_yellow_bell_Pepper;
     public static Item diced_red_bell_Pepper;
     public static Item diced_green_bell_Pepper;
     public static Item sliced_yellow_bell_Pepper;
     public static Item sliced_red_bell_Pepper;
     public static Item sliced_green_bell_Pepper;
-    
-    public static Item cucumber;
     public static Item cucumber_slices;
     public static Item diced_cucumber;
-    
-    public static Item squash;
     public static Item diced_squash;
-    
-    
     public static Item chili_pepper;
     public static Item diced_chili_pepper;
-    
-    
-   
-    public static Item corn_on_the_cob;
-    public static Item corn;
     public static Item corn_off_the_cob;
     //that even a thing?
-    
     public static Item diced_carrots;
     public static Item diced_potatoes;
     public static Item sliced_potatoes;
-    
-    
     public static Item uncooked_fries;
 	
     
-    public static Item blueberry;
-    public static Item rasphberry;
-    public static Item blackberry;
-    public static Item base_seeds;
    
 	
 	
@@ -100,11 +102,26 @@ public final class VoidModFoods {
 	 //crop drops
 	 garlic = registerCropDrop("garlic", VoidBlocks.crop_garlic, true);
 	 green_onion = registerCropDrop("green_onion", VoidBlocks.green_onion_crop, true);
-	 
+	 onion = registerCropDrop("onion", VoidBlocks.onion_crop, true);
+	 shallots = registerCropDrop("shallots", VoidBlocks.shallots_crop, true);
+	 tomato = registerCropDrop("tomato", VoidBlocks.tomato_crop, true);
+	 green_bell_pepper = registerCropDrop("green_bell_pepper", VoidBlocks.green_bell_pepper_crop, true);
+	 yellow_bell_pepper = registerCropDrop("yellow_bell_pepper", VoidBlocks.yellow_bell_pepper_crop, true);
+	 red_bell_pepper = registerCropDrop("red_bell_pepper", VoidBlocks.red_bell_pepper_crop, true);
+	 corn = registerCropDrop("corn", VoidBlocks.corn_crop, true);
+	 cucumber = registerCropDrop("cucumber", VoidBlocks.cucumber_crop, true);
 	 
 	 //seeds
 	 garlic_seeds = registerSeeds("garlic_seeds", VoidBlocks.crop_garlic, true);
 	 green_onion_seed = registerSeeds("green_onion_seed", VoidBlocks.green_onion_crop, true);
+	 onion_seed = registerSeeds("onion_seed", VoidBlocks.onion_crop, true);
+	 shallots_seed = registerSeeds("shallots_seed", VoidBlocks.shallots_crop, true);
+	 tomato_seed = registerSeeds("tomato_seed", VoidBlocks.tomato_crop, true);
+	 green_bell_pepper_seed = registerSeeds("red_bell_peppe_seedr", VoidBlocks.green_bell_pepper_crop, true);
+	 yellow_bell_pepper_seed = registerSeeds("red_bell_pepper_seed", VoidBlocks.yellow_bell_pepper_crop, true);
+	 red_bell_pepper_seed = registerSeeds("red_bell_pepper_seed", VoidBlocks.red_bell_pepper_crop, true);
+	 corn_seed = registerSeeds("corn_seed", VoidBlocks.corn_crop, true);
+	 cucumber_seed = registerSeeds("cucumber_seed", VoidBlocks.cucumber_crop, true);
 	 
 	 
 	}
