@@ -34,6 +34,29 @@ public class VoidBlocks {
     public static final VoidCropsParent red_bell_pepper_crop = new VoidCropsParent("red_bell_pepper_crop", "red_bell_pepper_crop");
     public static final VoidCropsParent corn_crop = new VoidCropsParent("corn_crop", "corn_crop");
     public static final VoidCropsParent cucumber_crop = new VoidCropsParent("cucumber_crop", "cucumber_crop");
+    public static final VoidCropsParent squash_crop = new VoidCropsParent("squash_crop", "squash_crop");
+    public static final VoidCropsParent chili_crop = new VoidCropsParent("chili_crop", "chili_crop");
+    public static final VoidCropsParent blueberry_crop = new VoidCropsParent("blueberry_crop", "blueberry_crop");
+    public static final VoidCropsParent rasphberry_crop = new VoidCropsParent("rasphberry_crop", "rasphberry_crop");
+    public static final VoidCropsParent blackberry_crop = new VoidCropsParent("blackberry_crop", "blackberry_crop");
+    public static final VoidCropsParent asparagus_crop = new VoidCropsParent("asparagus_crop", "asparagus_crop");
+    public static final VoidCropsParent soy_bean_crop = new VoidCropsParent("soy_bean_crop", "soy_bean_crop");
+    public static final VoidCropsParent barley_crop = new VoidCropsParent("barley_crop", "barley_crop");
+    public static final VoidCropsParent rye_crop = new VoidCropsParent("rye_crop", "rye_crop");
+    public static final VoidCropsParent sweet_potato_crop = new VoidCropsParent("sweet_potato_crop", "sweet_potato_crop");
+    public static final VoidCropsParent peanut_crop = new VoidCropsParent("peanut_crop", "peanut_crop");
+    public static final VoidCropsParent broccoli_crop = new VoidCropsParent("broccoli_crop", "broccoli_crop");
+    public static final VoidCropsParent lettuce_crop = new VoidCropsParent("lettuce_crop", "lettuce_crop");
+    public static final VoidCropsParent celery_crop = new VoidCropsParent("celery_crop", "celery_crop");
+    public static final VoidCropsParent cabbage_crop = new VoidCropsParent("cabbage_crop", "cabbage_crop");
+    public static final VoidCropsParent green_bean_crop = new VoidCropsParent("green_bean_crop", "green_bean_crop");
+    
+    
+    
+    
+    
+    
+    
     
     
    public static void register(){

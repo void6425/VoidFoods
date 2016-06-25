@@ -29,13 +29,7 @@ public final class VoidModFoods {
 	public static HashMap<VoidCropsParent, Item> dropsMap = new HashMap<VoidCropsParent, Item>();	
 	
 	public static Item test_seed;
-	public static Item egg_white;
-	public static Item egg_yolk;
-    public static Item seperated_egg;
-    public static Item mayo;
-   
-    public static Item LevitationStew;
-   
+	
     public static Item garlic;
     public static Item garlic_seeds;
     public static Item green_onion;
@@ -44,8 +38,7 @@ public final class VoidModFoods {
     public static Item onion_seed;
     public static Item shallots;
     public static Item shallots_seed;
-    
-   
+     
     public static Item tomato;
     public static Item tomato_seed;
     public static Item red_bell_pepper;
@@ -60,12 +53,41 @@ public final class VoidModFoods {
     public static Item cucumber_seed;
     public static Item squash;
     public static Item squash_seed;
+    public static Item chili;
+    public static Item chili_seed;
     public static Item blueberry;
     public static Item blueberry_seed;
     public static Item rasphberry;
     public static Item rasphberry_seed;
     public static Item blackberry;
     public static Item blackberry_seed;
+    public static Item asparagus;
+    public static Item asparagus_seed;
+    public static Item rice;
+    public static Item rice_seed;
+    public static Item soy_bean;
+    public static Item soy_bean_seed;
+    public static Item barley;
+    public static Item barley_seed;
+    public static Item oats;
+    public static Item oats_seed;
+    public static Item rye;
+    public static Item rye_seed;
+    public static Item sweet_potato;
+    public static Item sweet_potato_seed;
+    public static Item peanut;
+    public static Item peanut_seed;
+    public static Item broccoli;
+    public static Item broccoli_seed;
+    public static Item lettuce;
+    public static Item lettuce_seed;
+    public static Item celery;
+    public static Item celery_seed;
+    public static Item cabbage;
+    public static Item cabbage_seed;
+    public static Item green_bean;
+    public static Item green_bean_seed;
+    
     
     
     public static Item diced_yellow_bell_Pepper;
@@ -77,8 +99,7 @@ public final class VoidModFoods {
     public static Item cucumber_slices;
     public static Item diced_cucumber;
     public static Item diced_squash;
-    public static Item chili_pepper;
-    public static Item diced_chili_pepper;
+    public static Item diced_chili;
     public static Item corn_off_the_cob;
     //that even a thing?
     public static Item diced_carrots;
@@ -95,7 +116,7 @@ public final class VoidModFoods {
 	{
 	   //base_seeds = registerSeeds("base_seeds", VoidBlocks.base_crop, true);
 	 test_seed = registerSeeds("test_seed", VoidBlocks.test_crop, true);
-	 LevitationStew = registerPotionFood(LevitationStew,"LevitationStew", 1, 4f, false, "levitation" );
+	
 	 
 	 
 	 
@@ -110,6 +131,27 @@ public final class VoidModFoods {
 	 red_bell_pepper = registerCropDrop("red_bell_pepper", VoidBlocks.red_bell_pepper_crop, true);
 	 corn = registerCropDrop("corn", VoidBlocks.corn_crop, true);
 	 cucumber = registerCropDrop("cucumber", VoidBlocks.cucumber_crop, true);
+	 squash = registerCropDrop("squash", VoidBlocks.squash_crop, true);
+	 chili = registerCropDrop("chili", VoidBlocks.chili_crop, true);
+	 blueberry = registerCropDrop("blueberry", VoidBlocks.blueberry_crop, true);
+	 rasphberry = registerCropDrop("rasphberry", VoidBlocks.rasphberry_crop, true);
+	 blackberry = registerCropDrop("blackberry", VoidBlocks.blackberry_crop, true);
+	 asparagus = registerCropDrop("asparagus", VoidBlocks.asparagus_crop, true);
+	 soy_bean = registerCropDrop("soy_bean", VoidBlocks.soy_bean_crop, true);
+	 barley = registerCropDrop("barley", VoidBlocks.barley_crop, true);
+	 rye = registerCropDrop("rye", VoidBlocks.rye_crop, true);
+	 sweet_potato = registerCropDrop("sweet_potato", VoidBlocks.sweet_potato_crop, true);
+	 peanut = registerCropDrop("peanut", VoidBlocks.peanut_crop, true);
+	 broccoli = registerCropDrop("broccoli", VoidBlocks.broccoli_crop, true);
+	 lettuce = registerCropDrop("lettuce", VoidBlocks.lettuce_crop, true);
+	 celery = registerCropDrop("celery", VoidBlocks.celery_crop, true);
+	 cabbage = registerCropDrop("cabbage", VoidBlocks.cabbage_crop, true);
+	 green_bean = registerCropDrop("green_bean", VoidBlocks.green_bean_crop, true);
+	 
+	 
+	 
+	 
+	 
 	 
 	 //seeds
 	 garlic_seeds = registerSeeds("garlic_seeds", VoidBlocks.crop_garlic, true);
@@ -117,11 +159,41 @@ public final class VoidModFoods {
 	 onion_seed = registerSeeds("onion_seed", VoidBlocks.onion_crop, true);
 	 shallots_seed = registerSeeds("shallots_seed", VoidBlocks.shallots_crop, true);
 	 tomato_seed = registerSeeds("tomato_seed", VoidBlocks.tomato_crop, true);
-	 green_bell_pepper_seed = registerSeeds("red_bell_peppe_seedr", VoidBlocks.green_bell_pepper_crop, true);
-	 yellow_bell_pepper_seed = registerSeeds("red_bell_pepper_seed", VoidBlocks.yellow_bell_pepper_crop, true);
+	 green_bell_pepper_seed = registerSeeds("green_bell_pepper_seed", VoidBlocks.green_bell_pepper_crop, true);
+	 yellow_bell_pepper_seed = registerSeeds("yellow_bell_pepper_seed", VoidBlocks.yellow_bell_pepper_crop, true);
 	 red_bell_pepper_seed = registerSeeds("red_bell_pepper_seed", VoidBlocks.red_bell_pepper_crop, true);
 	 corn_seed = registerSeeds("corn_seed", VoidBlocks.corn_crop, true);
 	 cucumber_seed = registerSeeds("cucumber_seed", VoidBlocks.cucumber_crop, true);
+	 squash_seed = registerSeeds("squash_seed", VoidBlocks.squash_crop, true);
+	 chili_seed = registerSeeds("chili_seed", VoidBlocks.chili_crop, true);
+	 blueberry_seed = registerSeeds("blueberry_seed", VoidBlocks.blueberry_crop, true);
+	 rasphberry_seed = registerSeeds("rasphberry_seed", VoidBlocks.rasphberry_crop, true);
+	 blackberry_seed = registerSeeds("blackberry_seed", VoidBlocks.blackberry_crop, true);
+	 asparagus_seed = registerSeeds("asparagus_seed", VoidBlocks.asparagus_crop, true);
+	 soy_bean_seed = registerSeeds("soy_bean_seed", VoidBlocks.soy_bean_crop, true);
+	 barley_seed = registerSeeds("barley_seed", VoidBlocks.barley_crop, true);
+	 rye_seed = registerSeeds("rye_seed", VoidBlocks.rye_crop, true);
+	 sweet_potato_seed = registerSeeds("sweet_potato_seed", VoidBlocks.sweet_potato_crop, true);
+	 peanut_seed = registerSeeds("peanut_seed", VoidBlocks.peanut_crop, true);
+	 broccoli_seed = registerSeeds("broccoli_seed", VoidBlocks.broccoli_crop, true);
+	 lettuce_seed = registerSeeds("lettuce_seed", VoidBlocks.lettuce_crop, true);
+	 celery_seed = registerSeeds("celery_seed", VoidBlocks.celery_crop, true);
+	 cabbage_seed = registerSeeds("cabbage_seed", VoidBlocks.cabbage_crop, true);
+	 green_bean_seed = registerSeeds("green_bean_seed", VoidBlocks.green_bean_crop, true);
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	 
 	 
 	}
@@ -131,6 +203,43 @@ public final class VoidModFoods {
     initModels(garlic_seeds);
     initModels(green_onion_seed);
     initModels(green_onion);
+    initModels(onion);
+    initModels(onion_seed);
+    initModels(shallots);
+    initModels(shallots_seed);
+    initModels(tomato);
+    initModels(tomato_seed);
+    initModels(red_bell_pepper);
+    initModels(red_bell_pepper_seed);
+    initModels(yellow_bell_pepper);
+    initModels(yellow_bell_pepper_seed);
+    initModels(green_bell_pepper);
+    initModels(green_bell_pepper_seed);
+    initModels(corn);
+    initModels(corn_seed);
+    initModels(cucumber);
+    initModels(cucumber_seed);
+    initModels(chili);
+    initModels(chili_seed);
+    initModels(blueberry);
+    initModels(blueberry_seed);
+    initModels(rasphberry);
+    initModels(rasphberry_seed);
+    initModels(blackberry);
+    initModels(blackberry_seed);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 	}
 	
 	@SideOnly(Side.CLIENT)

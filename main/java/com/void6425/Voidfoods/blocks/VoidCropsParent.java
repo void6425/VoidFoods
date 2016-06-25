@@ -23,7 +23,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 //This is the parent class for my crops
 import net.minecraftforge.common.IPlantable;
-
+//Thanks to MatrexsVigil of pams harvestcraft. Your code was a huge inspiration 
 
 	public class VoidCropsParent extends BlockCrops implements IGrowable, IPlantable {
 		
