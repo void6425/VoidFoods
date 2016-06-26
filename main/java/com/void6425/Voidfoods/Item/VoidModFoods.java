@@ -39,7 +39,6 @@ public final class VoidModFoods {
     public static Item onion_seed;
     public static Item shallots;
     public static Item shallots_seed;
-     
     public static Item tomato;
     public static Item tomato_seed;
     public static Item red_bell_pepper;
@@ -109,6 +108,34 @@ public final class VoidModFoods {
     public static Item uncooked_fries;
 	//Configs
     public static boolean garlicseedfromgrass;
+    public static boolean greenonionfromgrass;
+    public static boolean onionseedfromgrass;
+    public static boolean shallotseedfromgrass;
+    public static boolean tomatoseedfromgrass;
+    public static boolean greenbellpepperseedfromgrass;
+    public static boolean redbellpepperseedfromgrass;
+    public static boolean yellowbellpepperfromgrass; 
+    public static boolean cornseedfromgrass;
+    public static boolean cucumberseedfromgrass;
+    public static boolean squashseedfromgrass;
+    public static boolean chiliseedfromgrass;
+    public static boolean blueberryseedfromgrass;
+    public static boolean rasphberryseedfromgrass;
+    public static boolean blackberryseedfromgrass;
+    public static boolean asparagusseedfromgrass;
+    public static boolean riceseedfromgrass;
+    public static boolean soyseedfromgrass;
+    public static boolean barleyseedfromgrass;
+    public static boolean ryeseedfromgrass;
+    public static boolean sweetpotatoseedfromgrass;
+    public static boolean peanutseedfromgrass;
+    public static boolean broccoliseedfromgrass;
+    public static boolean lettuceseedfromgrass;
+    public static boolean celeryseedfromgrass;
+    public static boolean cabbageseedfromgrass;
+    public static boolean greenbeanseedfromgrass;
+    
+    
     public static int seedrarity;
 	
 	
@@ -122,32 +149,32 @@ public final class VoidModFoods {
 	 
 	 
 	 //crop drops
-	 garlic = registerCropDrop("garlic", VoidBlocks.crop_garlic, true);
-	 green_onion = registerCropDrop("green_onion", VoidBlocks.green_onion_crop, true);
-	 onion = registerCropDrop("onion", VoidBlocks.onion_crop, true);
-	 shallots = registerCropDrop("shallots", VoidBlocks.shallots_crop, true);
-	 tomato = registerCropDrop("tomato", VoidBlocks.tomato_crop, true);
-	 green_bell_pepper = registerCropDrop("green_bell_pepper", VoidBlocks.green_bell_pepper_crop, true);
-	 yellow_bell_pepper = registerCropDrop("yellow_bell_pepper", VoidBlocks.yellow_bell_pepper_crop, true);
-	 red_bell_pepper = registerCropDrop("red_bell_pepper", VoidBlocks.red_bell_pepper_crop, true);
-	 corn = registerCropDrop("corn", VoidBlocks.corn_crop, true);
-	 cucumber = registerCropDrop("cucumber", VoidBlocks.cucumber_crop, true);
-	 squash = registerCropDrop("squash", VoidBlocks.squash_crop, true);
-	 chili = registerCropDrop("chili", VoidBlocks.chili_crop, true);
-	 blueberry = registerCropDrop("blueberry", VoidBlocks.blueberry_crop, true);
-	 rasphberry = registerCropDrop("rasphberry", VoidBlocks.rasphberry_crop, true);
-	 blackberry = registerCropDrop("blackberry", VoidBlocks.blackberry_crop, true);
-	 asparagus = registerCropDrop("asparagus", VoidBlocks.asparagus_crop, true);
-	 soy_bean = registerCropDrop("soy_bean", VoidBlocks.soy_bean_crop, true);
-	 barley = registerCropDrop("barley", VoidBlocks.barley_crop, true);
-	 rye = registerCropDrop("rye", VoidBlocks.rye_crop, true);
-	 sweet_potato = registerCropDrop("sweet_potato", VoidBlocks.sweet_potato_crop, true);
-	 peanut = registerCropDrop("peanut", VoidBlocks.peanut_crop, true);
-	 broccoli = registerCropDrop("broccoli", VoidBlocks.broccoli_crop, true);
-	 lettuce = registerCropDrop("lettuce", VoidBlocks.lettuce_crop, true);
-	 celery = registerCropDrop("celery", VoidBlocks.celery_crop, true);
-	 cabbage = registerCropDrop("cabbage", VoidBlocks.cabbage_crop, true);
-	 green_bean = registerCropDrop("green_bean", VoidBlocks.green_bean_crop, true);
+	 garlic = registerCropDrop("garlic", VoidBlocks.crop_garlic, true, false);
+	 green_onion = registerCropDrop("green_onion", VoidBlocks.green_onion_crop, true, false);
+	 onion = registerCropDrop("onion", VoidBlocks.onion_crop, true, false);
+	 shallots = registerCropDrop("shallots", VoidBlocks.shallots_crop, true, false);
+	 tomato = registerCropDrop("tomato", VoidBlocks.tomato_crop, true, false);
+	 green_bell_pepper = registerCropDrop("green_bell_pepper", VoidBlocks.green_bell_pepper_crop, true, false);
+	 yellow_bell_pepper = registerCropDrop("yellow_bell_pepper", VoidBlocks.yellow_bell_pepper_crop, true, false);
+	 red_bell_pepper = registerCropDrop("red_bell_pepper", VoidBlocks.red_bell_pepper_crop, true, false);
+	 corn = registerCropDrop("corn", VoidBlocks.corn_crop, true, false);
+	 cucumber = registerCropDrop("cucumber", VoidBlocks.cucumber_crop, true, false);
+	 squash = registerCropDrop("squash", VoidBlocks.squash_crop, true, false);
+	 chili = registerCropDrop("chili", VoidBlocks.chili_crop, true, false);
+	 blueberry = registerCropDrop("blueberry", VoidBlocks.blueberry_crop, true, false);
+	 rasphberry = registerCropDrop("rasphberry", VoidBlocks.rasphberry_crop, true, false);
+	 blackberry = registerCropDrop("blackberry", VoidBlocks.blackberry_crop, true, false);
+	 asparagus = registerCropDrop("asparagus", VoidBlocks.asparagus_crop, true, false);
+	 soy_bean = registerCropDrop("soy_bean", VoidBlocks.soy_bean_crop, true, false);
+	 barley = registerCropDrop("barley", VoidBlocks.barley_crop, true, false);
+	 rye = registerCropDrop("rye", VoidBlocks.rye_crop, true, false);
+	 sweet_potato = registerCropDrop("sweet_potato", VoidBlocks.sweet_potato_crop, true, false);
+	 peanut = registerCropDrop("peanut", VoidBlocks.peanut_crop, true, false);
+	 broccoli = registerCropDrop("broccoli", VoidBlocks.broccoli_crop, true, false);
+	 lettuce = registerCropDrop("lettuce", VoidBlocks.lettuce_crop, true, false);
+	 celery = registerCropDrop("celery", VoidBlocks.celery_crop, true, false);
+	 cabbage = registerCropDrop("cabbage", VoidBlocks.cabbage_crop, true, false);
+	 green_bean = registerCropDrop("green_bean", VoidBlocks.green_bean_crop, true, false);
 	 
 	 
 	 
@@ -203,10 +230,36 @@ public final class VoidModFoods {
 	public static void initItems(Configuration config) {
    
         
-        seedrarity = config.get("seeds", "seedrarity", 1).getInt();
+       seedrarity = config.get("seeds", "seedrarity", 1).getInt();
         
 
-        garlicseedfromgrass = config.get("seeds", "asparagusseeddropfromgrass", true).getBoolean(true);
+       garlicseedfromgrass = config.get("seeds", "garlicseedfromgrass", true).getBoolean(true);
+       greenonionfromgrass = config.get("seeds", "greenonionfromgrass", true).getBoolean(true);
+       onionseedfromgrass = config.get("seeds", "onionseedfromgrass", true).getBoolean(true);
+       shallotseedfromgrass = config.get("seeds", "shallotseedfromgrass", true).getBoolean(true);
+       tomatoseedfromgrass = config.get("seeds", "tomatoseedfromgrass", true).getBoolean(true);
+       greenbellpepperseedfromgrass = config.get("seeds", "greenbellpepperseedfromgrass", true).getBoolean(true);
+       redbellpepperseedfromgrass = config.get("seeds", "redbellpepperseedfromgrass", true).getBoolean(true);
+       yellowbellpepperfromgrass = config.get("seeds", "yellowbellpepperfromgrass", true).getBoolean(true);
+       cornseedfromgrass = config.get("seeds", "cornseedfromgrass", true).getBoolean(true);
+       cucumberseedfromgrass = config.get("seeds", "cucumberseedfromgrass", true).getBoolean(true);
+       squashseedfromgrass = config.get("seeds", "squashseedfromgrass", true).getBoolean(true);
+       chiliseedfromgrass = config.get("seeds", "chiliseedfromgrass", true).getBoolean(true);
+       blueberryseedfromgrass = config.get("seeds", "blueberryseedfromgrass", true).getBoolean(true);
+       rasphberryseedfromgrass = config.get("seeds", "rasphberryseedfromgrass", true).getBoolean(true);
+       blackberryseedfromgrass = config.get("seeds", "blackberryseedfromgrass", true).getBoolean(true);
+       asparagusseedfromgrass = config.get("seeds", "asparagusseedfromgrass", true).getBoolean(true);
+       riceseedfromgrass = config.get("seeds", "riceseedfromgrass", true).getBoolean(true);
+       soyseedfromgrass = config.get("seeds", "soyseedfromgrass", true).getBoolean(true);
+       barleyseedfromgrass = config.get("seeds", "barleyseedfromgrass", true).getBoolean(true);
+       ryeseedfromgrass = config.get("seeds", "ryeseedfromgrass", true).getBoolean(true);
+       sweetpotatoseedfromgrass = config.get("seeds", "sweetpotatoseedfromgrass", true).getBoolean(true);
+       peanutseedfromgrass = config.get("seeds", "peanutseedfromgrass", true).getBoolean(true);
+       broccoliseedfromgrass = config.get("seeds", "broccoliseedfromgrass", true).getBoolean(true);
+       lettuceseedfromgrass = config.get("seeds", "lettuceseedfromgrass", true).getBoolean(true);
+       celeryseedfromgrass = config.get("seeds", "celeryseedfromgrass", true).getBoolean(true);
+       cabbageseedfromgrass = config.get("seeds", "cabbageseedfromgrass", true).getBoolean(true);
+       greenbeanseedfromgrass = config.get("seeds", "greenbeanseedfromgrass", true).getBoolean(true);
         
     }
 	
@@ -294,8 +347,8 @@ public final class VoidModFoods {
         return GameRegistry.register(item11);
     }
 	
-	public static Item registerCropDrop(String registryName, Block crop, boolean isdrop){
-		Item item = new ItemSeedFood( 1, 0f, crop, Blocks.FARMLAND);
+	public static Item registerCropDrop(String registryName, Block crop, boolean isdrop, boolean isWolfFood){
+		Item item = new ItemFood( 1, 0f, isWolfFood);
 		if(isdrop){
 	    	   dropsMap.put((VoidCropsParent) crop, item);
 	       }
