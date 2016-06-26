@@ -17,6 +17,7 @@ import net.minecraft.item.ItemSeedFood;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -106,9 +107,9 @@ public final class VoidModFoods {
     public static Item diced_potatoes;
     public static Item sliced_potatoes;
     public static Item uncooked_fries;
-	
-    
-   
+	//Configs
+    public static boolean garlicseedfromgrass;
+    public static int seedrarity;
 	
 	
 	
@@ -196,7 +197,22 @@ public final class VoidModFoods {
 	 
 	 
 	 
+	
+	 
 	}
+	public static void initItems(Configuration config) {
+   
+        
+        seedrarity = config.get("seeds", "seedrarity", 1).getInt();
+        
+
+        garlicseedfromgrass = config.get("seeds", "asparagusseeddropfromgrass", true).getBoolean(true);
+        
+    }
+	
+	
+	
+	
 	public static void regiseterRenders()
 	{
     initModels(garlic);

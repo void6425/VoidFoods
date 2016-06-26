@@ -1,5 +1,6 @@
 package com.void6425.Voidfoods;
 
+import com.void6425.Voidfoods.Item.GrassSeedDrop;
 import com.void6425.Voidfoods.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
@@ -34,7 +35,10 @@ public class Main {
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) 
     {
-		proxy.preInit(e);  
+    	Configs.instance.load(e);
+    	proxy.preInit(e); 
+    	GrassSeedDrop.getSeedDrops();
+		
     }
     @EventHandler
     public void init(FMLInitializationEvent e) 
