@@ -296,13 +296,30 @@ public final class VoidModFoods {
     initModels(rasphberry_seed);
     initModels(blackberry);
     initModels(blackberry_seed);
-    
-    
-    
-    
-    
-    
-    
+    initModels(asparagus);
+    initModels(asparagus_seed);
+    initModels(rice);
+    initModels(rice_seed);
+    initModels(soy_bean);
+    initModels(soy_bean_seed);
+    initModels(barley);
+    initModels(barley_seed);
+    initModels(oats);
+    initModels(oats_seed);
+    initModels(rye);
+    initModels(rye_seed);
+    initModels(sweet_potato);
+    initModels(sweet_potato_seed);
+    initModels(peanut);
+    initModels(peanut_seed);
+    initModels(broccoli);
+    initModels(broccoli_seed);
+    initModels(lettuce);
+    initModels(lettuce_seed);
+    initModels(celery);
+    initModels(celery_seed);
+    initModels(green_bean);
+    initModels(green_bean_seed);
     
     
     
